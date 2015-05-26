@@ -32,7 +32,7 @@ public class DiamondExercise
     int halfLine = (n+1)/2;
     for(int row=1;row<=n;row++)
     {
-      if(row <= halfLine)
+      if(row < halfLine)
       {
         for(int j=1;j<=halfLine-row;j++)
         {
@@ -43,6 +43,10 @@ public class DiamondExercise
           System.out.print("*");
         }
         System.out.println("\n");
+      }
+      else if(row == halfLine)
+      {
+        System.out.println("XUHAO\n");
       }
       else
       {
